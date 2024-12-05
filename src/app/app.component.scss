@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// MAIN DIV 
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 33vw;
+    background-color: #ecf0f1;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 70px;
+    margin-left: 450px;
+}
+
+
+// 1ST DIV IMG 
+img{
+    height: 40vh;
+
+}
+
+
+// 2ND DIV USER INFO
+
+h1 {
+    text-align: center;
+    margin: 5px;
+    font-weight: bold;
+    color: #9b59b6;
+}
+
+.data {
+    width: 30vw;
+    height: 10vh;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px
+}
+
+
+// 3RD DIV BUTTON 
+
+.button {
+    margin: 30px;
+    // background-color: #3498db;
+}
+
+.button-box {
+    padding: 20px;
+    width: 30vw;
+    height: 10vh;
+    text-align: center;
+    // font-weight: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #e0a2f8;
+    border-radius: 20px;
+}
+
+
+/* Responsive Style */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+        padding: 90%;
+    }
+    .data {
+        width: 100%;
+        height: 40px;
+    }
+
+    .button-box {
+        width: 100%;
+        height: 70px;
+    }
+
+    h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+
+}
+
+
+
+
+
+
+    
+
