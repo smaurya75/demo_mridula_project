@@ -1,0 +1,64 @@
+.main-container {
+    margin-left: 150px;
+    margin-top: 30px;
+    height: 80%;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 17vh;
+    width: 100%;
+    padding: 40px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: 2px solid gray;
+}
+span{
+    font-weight: 700;
+    font-size: large;
+}
+#addnew-button button{
+    height: 5vh;
+    width: 5vw;
+    border-radius: 5px;
+    background-color:black;
+    color: white;
+    margin-right:20px;
+   
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid gray;
+    margin-top: 10px;
+    padding-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+tr {
+    border-bottom: 2px solid gray;
+}
+
+td {
+    border: none;
+}
+
+table tr td button {
+    margin: 5px;
+    border: darkgreen;
+    border-style: dotted;
+    padding: 7px;
+    border-radius: 7px;
+}
