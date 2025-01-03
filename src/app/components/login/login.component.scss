@@ -1,0 +1,126 @@
+// Navbar start
+.navbar {
+    background: linear-gradient(to right, #FFFFFF 45%, #faa51a 55%);
+    height: 14vh;
+
+    #left-box {
+        height: 13.7vh;
+    }
+
+    #right-box {
+        height: 13.7vh;
+    }
+
+    img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        margin-left: 27px;
+    }
+
+    .helpline {
+        // background: linear-gradient(to right, #FFFFFF 45%, #faa51a 55%);
+        padding: 25px;
+        letter-spacing: 0.9apx;
+    }
+
+    p {
+        font-size: 17px;
+        font-weight: bold;
+    }
+}
+
+// Navbar closed
+
+// Main-Section start
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    height: 65vh;
+    width: 60vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+// mian-left-image-part 
+span {
+    color: red;
+}
+
+
+@mixin mianleftpart {
+    height: 65vh;
+    width: 20vw;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+}
+
+#left-image {
+    @include mianleftpart;
+}
+
+img {
+    @include mianleftpart;
+}
+
+// mian-right-login-part 
+#right-login {
+    height: 65vh;
+    width: 40vw;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+
+    p {
+        padding-left: 90px;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+
+    h4 {
+        padding-left: 90px;
+        font-size: 12px;
+    }
+
+    form {
+        padding-left: 90px;
+
+        label {
+            margin-top: 10px;
+            font-size: 13px;
+            font-weight: 590;
+        }
+
+        input {
+            width: 29vw;
+            height: 5.8vh;
+        }
+
+        button {
+            margin-top: 30px;
+            padding: 10px 9px;
+            background-image: linear-gradient(180deg, #faa51a, #faa51a 330px, #f1f3f9 0);
+            color: white;
+            height: 4.7vh;
+            width: 3.7vw;
+            text-align: center;
+            line-height: 4.7px;
+            font-size: 0.7em;
+            font-weight: 500;
+            border: none;
+            display: inline-block;
+            border-radius: 6px;
+        }
+    }
+
+}
+
+// Main-Section Closed
+
+// Footer
+footer {
+    background-color: #0a2351;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}

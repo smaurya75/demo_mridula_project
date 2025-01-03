@@ -1,0 +1,22 @@
+{
+    "mobileno": "8888888888",
+    "password": "Password@123",
+    "clientid": "GRP24040106370616168091"
+}
+{
+    "API":"https://dev-ris-backend.epravaha.com/api/login/user",
+    "Use":"Login"
+}
+{
+    "API":"https://dev-ris-backend.epravaha.com/api/group/count?GroupType=Agency",
+    "Use":"Agency Count"
+}
+{
+    "API":"https://dev-ris-backend.epravaha.com/api/dashboard/targetallot",
+    "Use":"targetallot"
+}
+{
+    "API":"https://dev-ris-backend.epravaha.com/api/dashboard/soldstock",
+    "Use":"Available QTY"
+}
+

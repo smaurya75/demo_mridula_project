@@ -1,0 +1,46 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg  ">
+    <!-- Left Box (Logo) -->
+    <div class="col-6" id="left-box">
+        <img src="assets/image/Ministry.png" alt="Ministry">
+    </div>
+
+    <!-- Right Box (Helpline - Number) -->
+    <div class="helpline col-6 text-end" id="right-box">
+        <p>Helpline:-01206431872</p>
+    </div>
+</nav>
+
+<!-- Main-Section -->
+<main class="container-fluid rounded-4">
+    <!-- Left part with image -->
+    <div class="col-md-6" id="left-image">
+        <img src="assets/image/login.jpg" alt="login">
+    </div>
+
+    <!-- Right part with login form -->
+    <div class="col-md-6" id="right-login">
+        <div class="login-form">
+            <p>Login To Continue</p>
+            <h4>Please Provide Your Login Credential</h4>
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <div class="mb-1">
+                    <label for="mobilenumber" class="form-label"><span>*</span>Mobile Number</label>
+                    <input type="number" class="form-control" formControlName="mobilenumber">
+                </div>
+
+                <div class="mb-1">
+                    <label for="password" class="form-"><span>*</span>Password</label>
+                    <input type="password" class="form-control" formControlName="password">
+                </div>
+
+                <button type='submit'>Login</button>
+            </form>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="footer py-3 mt-5">
+    <p class="mb-0">&#169;Copyrights 2024.&nbsp;&nbsp;&nbsp;Powered by SupplyValid</p>
+</footer>
