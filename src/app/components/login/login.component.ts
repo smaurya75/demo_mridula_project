@@ -48,7 +48,7 @@ export class LoginComponent {
           }
         },
         (error) => {
-          alert(error?.error?.message)
+          // alert(error?.error?.message)
           console.error('Login failed', error);
         }
       );

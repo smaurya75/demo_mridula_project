@@ -1,5 +1,4 @@
 <div class="wrapper">
-
   <!--Nav Sidebar -->
   <nav class="sidebar">
     <div class="sidebar-image">
@@ -7,8 +6,8 @@
     </div>
     <div class="sidebar-list">
       <ul>
-        <li style="background-color: #faa51a; color: white;"><a href="">Dashboard</a></li>
-        <li><a href="">Agency</a></li>
+        <li  ><a routerLink="/dashboard">Dashboard</a> </li>
+        <li ><a  routerLink="/agency-list">Agency</a></li>
         <li><a href="">Allotment</a></li>
         <li><a href="">Data Management</a>
           <!-- <ul>
@@ -36,37 +35,21 @@
         </li>
       </ul>
     </div>
-
-<!-- ......................................... -->
-<!-- 
-    <div class="dropdown">
-      <a href="#" class="dropbtn">Services</a>
-      <div class="dropdown-content">
-        <a href="#">Web Design</a>
-        <a href="#">Development</a>
-        <a href="#">SEO</a>
-      </div>
-    </div> -->
   </nav>
   <!-- Nav Sidebar Closed -->
 
-
-  <!-- Container to hold the cards -->
+  <!-- Main container -->
   <div class="container ">
     <div class="nav-div">
-      <div class="left-div">
+      <div class="left-div"> <!--left div (menu and home) -->
         <ul>
           <li><img src="assets/image/menu.png" alt="Menu"></li>
-          <li><i class="bi bi-bell"></i></li>
           <li><img src="assets/image/home.png" alt="Home"></li>
-          <li class="name">
-            Dashboard
-          </li>
+          <li class="name">Dashboard</li>
         </ul>
       </div>
 
-
-      <div class="right-div">
+      <div class="right-div"> <!--right div (notification, user, name and logout) -->
         <ul>
           <li><img src="assets/image/notification.png" alt="Notification"></li>
           <li><img src="assets/image/profile-user.png" alt="User"></li>
@@ -75,10 +58,12 @@
             <!-- <span>(DOCA)</span> -->
           </li>
           <li (click)="logout()">
-            <img src="assets/image/arrow.png" alt="Logout"></li>
+            <img src="assets/image/arrow.png" alt="Logout">
+          </li>
         </ul>
       </div>
     </div>
+     <!-- Upper navbar closed-->
 
 
     <!-- cards -->

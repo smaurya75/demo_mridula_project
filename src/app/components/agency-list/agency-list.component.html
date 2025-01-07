@@ -1,0 +1,128 @@
+<div class="wrapper">
+  <!--Nav Sidebar -->
+  <nav class="sidebar">
+    <div class="sidebar-image">
+      <img src="assets/image/Ministry.png" alt="Ministry-image">
+    </div>
+    <div class="sidebar-list">
+      <ul>
+        <li><a routerLink="/dashboard">Dashboard</a> </li>
+        <li><a routerLink="/agency-list">Agency</a></li>
+        <li><a href="">Allotment</a></li>
+        <li><a href="">Data Management</a>
+          <!-- <ul>
+            <li><a href="">Commodity</a></li>
+            <li><a href="">Season</a></li>
+            <li><a href="">Scheme</a></li>
+          </ul> -->
+        </li>
+
+        <li><a href=""> Inventory Management </a>
+          <!-- <ul>
+            <li><a href="">Raw Stock</a></li>
+            <li><a href="">Processed Stock</a></li>
+          </ul> -->
+        </li>
+
+        <li><a href="">Vehicle Tracker</a></li>
+        <li><a href="">Fixed Center</a></li>
+        <li><a href="">User</a></li>
+        <li class="dropdown">
+          <a href="" class="dropbtn">Report </a>
+          <ul class="dropdown-content">
+            <li><a href="">Sample</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Nav Sidebar Closed -->
+
+  <!-- Main container -->
+  <div class="container ">
+
+    <div class="nav-div">
+      <div class="left-div"> <!--left div (menu and home) -->
+        <ul>
+          <li><img src="assets/image/menu.png" alt="Menu"></li>
+          <li><img src="assets/image/home.png" alt="Home"></li>
+          <li class="name">Dashboard</li>
+        </ul>
+      </div>
+
+      <div class="right-div"> <!--right div (notification, user, name and logout) -->
+        <ul>
+          <li><img src="assets/image/notification.png" alt="Notification"></li>
+          <li><img src="assets/image/profile-user.png" alt="User"></li>
+          <li class="name">
+            <span> Sanjeev</span>
+            <!-- <span>(DOCA)</span> -->
+          </li>
+          <li (click)="logout()">
+            <img src="assets/image/arrow.png" alt="Logout">
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Upper navbar closed-->
+
+
+
+    <!-- Card wrap table -->
+
+    <div class="card-wrap">
+      <!-- Agency - Back -->
+      <div class="table-nav">
+        <div class="para"><span>Agency List</span></div>
+
+        <div class="buttons">
+          <button type="button" class="btn">Send Link</button>
+          <button type="button" class="btn">Add</button>
+          <button type="button" class="btn">Back</button>
+        </div>
+      </div>
+
+      <!-- Search and Table -->
+      <div class="container-fluid main-content" style="height: 10%;">
+        <div class="table-form">
+          <div class="search-button">
+            <input type="search" placeholder="Search">
+          </div>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">S.No.</th>
+                <th scope="col">Agency Name</th>
+                <th scope="col">State</th>
+                <th scope="col">Register Date</th>
+                <th scope="col">Action</th>
+                <th scope="col">Status</th>
+                <th scope="col">View</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of dataInfo; let i = index">
+                <td>{{ i + 1 }}</td>
+                <td>{{ item.name }}</td>
+                <td>{{ item.state }}</td>
+                <td>{{ item.portalregisterdate | date:'dd/MM/yyyy' }}</td>
+                <td>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" [checked]="item.isactive">
+                  </div>
+                </td>
+                <td>{{ item.isapprovalpending ? "Approved" : "Pending" }}</td>
+                <td class="img-png"><img src="assets/image/square.png" alt="View"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- Table Container End -->
+
+  </div>
+
+
+</div>

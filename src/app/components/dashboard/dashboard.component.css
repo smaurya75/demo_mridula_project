@@ -1,0 +1,105 @@
+.wrapper {
+  display: flex;
+}
+
+nav .sidebar-image > img {
+  height: 14vh;
+  width: 14vw;
+  margin: 7px;
+}
+nav ul {
+  list-style: none;
+  padding: 3px 8px;
+}
+nav li {
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  color: #faa51a;
+  text-align: left;
+  line-height: 15%;
+  font-size: 10.9px;
+  font-weight: 700;
+  background-color: #f6f9fc;
+}
+nav a {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f9fc;
+  min-width: 200px;
+  margin-top: 18px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #faa51a;
+  text-decoration: none;
+  display: block;
+}
+
+/* Show the dropdown content when hovering over the dropdown */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.container {
+  background-image: linear-gradient(180deg, #faa51a, #faa51a 260px, #f1f3f9 0);
+  padding-bottom: 10px;
+}
+
+.nav-div {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-div ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding-top: 10px;
+}
+.nav-div img {
+  height: 15px;
+  width: 15px;
+  margin: 6px;
+}
+.nav-div .name {
+  font-weight: 600;
+  font-size: 13.9px;
+  color: white;
+}
+
+.row {
+  margin-top: 7px;
+}
+.row .card {
+  box-shadow: 3px 3px 10px rgba(0, 30, 87, 0.7529411765);
+  border: 1px solid #ccc;
+  height: 80px;
+}
+.row .card-title,
+.row .card-text {
+  text-align: center;
+  font-weight: 700;
+}
+.row .card-title {
+  color: #faa51a;
+  margin-top: -10px;
+  letter-spacing: 0.7px;
+  font-size: 10px;
+}
+.row .card-text {
+  padding: 12px;
+  color: #767676;
+  font-size: 15px;
+}
+
+.map {
+  margin-top: 15px;
+}/*# sourceMappingURL=dashboard.component.css.map */

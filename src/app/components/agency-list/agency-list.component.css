@@ -1,0 +1,155 @@
+.wrapper {
+  display: flex;
+}
+
+nav .sidebar-image > img {
+  height: 14vh;
+  width: 14vw;
+  margin: 7px;
+}
+nav ul {
+  list-style: none;
+  padding: 3px 8px;
+}
+nav li {
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  color: #faa51a;
+  text-align: left;
+  line-height: 15%;
+  font-size: 10.9px;
+  font-weight: 700;
+  background-color: #f6f9fc;
+}
+nav a {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f9fc;
+  min-width: 200px;
+  margin-top: 18px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #faa51a;
+  text-decoration: none;
+  display: block;
+}
+
+/* Show the dropdown content when hovering over the dropdown */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.container {
+  background-image: linear-gradient(180deg, #faa51a, #faa51a 260px, #f1f3f9 0);
+  padding-bottom: 10px;
+}
+
+.nav-div {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-div .left-div {
+  margin-right: 2px;
+}
+.nav-div ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding-top: 10px;
+}
+.nav-div img {
+  height: 15px;
+  width: 15px;
+  margin: 6px;
+}
+.nav-div .name {
+  font-weight: 600;
+  font-size: 13.9px;
+  color: white;
+}
+
+.table-container {
+  width: 83vw;
+  height: 60vh;
+  border: 2px solid black;
+  background-color: #1afaa0;
+}
+
+.table-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7px;
+}
+
+.para span {
+  color: #faa51a;
+  line-height: 15%;
+  font-size: 13px;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  background-color: #faa51a;
+  height: 4.9vh;
+  width: 4vw;
+  font-size: 11.7px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  line-height: 4%;
+}
+
+.search-button {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+input {
+  width: 17vw;
+  padding-left: 7px;
+  height: 4.3vh;
+  padding-bottom: 4px;
+}
+
+input::-moz-placeholder {
+  font-size: 11px;
+  font-weight: 500;
+}
+
+input::placeholder {
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.table {
+  margin-left: 10px;
+  margin-top: 9px;
+  width: 81vw;
+  height: 50vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.table thead > tr > th {
+  background-color: #efefef;
+}
+
+#agency:hover {
+  background-color: #faa51a;
+  color: white;
+}/*# sourceMappingURL=agency-list.component.css.map */

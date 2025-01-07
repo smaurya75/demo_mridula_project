@@ -19,4 +19,9 @@
     "API":"https://dev-ris-backend.epravaha.com/api/dashboard/soldstock",
     "Use":"Available QTY"
 }
+// List //
+{
+    "API":"https://dev-ris-backend.epravaha.com/api/Group?GroupType=Agency",
+    "Use":"Agency List"
+}
 

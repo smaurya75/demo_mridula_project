@@ -7,12 +7,17 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import {  ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { DatePipe } from '@angular/common';
+import { AgencyListComponent } from './components/agency-list/agency-list.component';
+import { RouterModule } from '@angular/router';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     DashboardComponent,
+    AgencyListComponent,
+   
   ],
 
   imports: [
@@ -20,6 +25,7 @@ import { DatePipe } from '@angular/common';
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
+    RouterModule
   ],
   providers: [DatePipe],
   bootstrap: [AppComponent]

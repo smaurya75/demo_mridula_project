@@ -34,8 +34,7 @@ export class DashboardComponent {
 
   // agencycount api
   public getAgencyCount() {
-    const headers = new HttpHeaders({
-      'Authorization': `Bearer ${this.token}`
+    const headers = new HttpHeaders({'Authorization': `Bearer ${this.token}`
     });
     this.http.get('https://dev-ris-backend.epravaha.com/api/group/count?GroupType=Agency', { headers })
       .subscribe(
@@ -88,6 +87,10 @@ export class DashboardComponent {
 
   logout() {
     this.router.navigate(['/login']);
+  }
+      
+  agencylist() {
+    this.router.navigate(['/agency-list']);
   }
 }
 
