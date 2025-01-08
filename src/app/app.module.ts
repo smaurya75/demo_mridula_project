@@ -4,11 +4,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-import {  ReactiveFormsModule } from '@angular/forms';
+import {  FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { DatePipe } from '@angular/common';
 import { AgencyListComponent } from './components/agency-list/agency-list.component';
 import { RouterModule } from '@angular/router';
+import { SearchNamePipe } from './pipename.pipe';
+import { SearchStringPipe } from './services/common/pipes/search-string.pipe';
+
+
+
 
 
 @NgModule({
@@ -17,7 +22,8 @@ import { RouterModule } from '@angular/router';
     LoginComponent,
     DashboardComponent,
     AgencyListComponent,
-   
+    SearchNamePipe,
+    SearchStringPipe
   ],
 
   imports: [
@@ -25,9 +31,11 @@ import { RouterModule } from '@angular/router';
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    RouterModule
+    RouterModule,
+    FormsModule,
+    
   ],
-  providers: [DatePipe],
+  providers: [DatePipe,],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

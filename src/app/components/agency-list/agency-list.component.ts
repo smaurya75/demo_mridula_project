@@ -4,12 +4,12 @@ import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { CommonServiceService } from '../../common-service.service';
 
-
-interface MyData {
-  id: number;
-  grouptype: string;
-  motherdairy: number;
+export interface seachData {
+  sno: string;
+  agency: string;
+  state: string;
 }
+
 
 @Component({
   selector: 'app-agency-list',
@@ -17,15 +17,15 @@ interface MyData {
   styleUrl: './agency-list.component.scss'
 })
 export class AgencyListComponent {
- dataInfo: any [] = [];
-
+  dataInfo: any[] = [];
+  searchString = ''
 
 
   constructor(
     private _commonService: CommonServiceService,    // create object of service to inject service file
     private router: Router
   ) {
-    
+
   }
 
   ngOnInit() {
@@ -33,21 +33,10 @@ export class AgencyListComponent {
   }
 
   getData() {
-    
+
     this._commonService.getUserData().subscribe((res) => {
       this.dataInfo = res;
-      console.log(res, "result")
-      console.log("sv", this.dataInfo)
     })
-  }
-
-
-  logout() {
-    this.router.navigate(['']);
-  }
-  
-  goToDashboard() {
-    this.router.navigate(['/dashboard']);
   }
 
 }

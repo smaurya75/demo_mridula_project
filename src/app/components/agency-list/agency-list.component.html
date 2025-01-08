@@ -57,8 +57,9 @@
           <li class="name">
             <span> Sanjeev</span>
             <!-- <span>(DOCA)</span> -->
-          </li>
-          <li (click)="logout()">
+            <!-- </li>
+          <li (click)="logout()"> -->
+          <li routerLink="/logout">
             <img src="assets/image/arrow.png" alt="Logout">
           </li>
         </ul>
@@ -83,46 +84,73 @@
       </div>
 
       <!-- Search and Table -->
-      <div class="container-fluid main-content" style="height: 10%;">
+      <div class="container-fluid main-content">
         <div class="table-form">
+
           <div class="search-button">
-            <input type="search" placeholder="Search">
+            <input type="search" [(ngModel)]=" searchString " placeholder="Search">
           </div>
 
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">S.No.</th>
-                <th scope="col">Agency Name</th>
-                <th scope="col">State</th>
-                <th scope="col">Register Date</th>
-                <th scope="col">Action</th>
-                <th scope="col">Status</th>
-                <th scope="col">View</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr *ngFor="let item of dataInfo; let i = index">
-                <td>{{ i + 1 }}</td>
-                <td>{{ item.name }}</td>
-                <td>{{ item.state }}</td>
-                <td>{{ item.portalregisterdate | date:'dd/MM/yyyy' }}</td>
-                <td>
-                  <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" [checked]="item.isactive">
-                  </div>
-                </td>
-                <td>{{ item.isapprovalpending ? "Approved" : "Pending" }}</td>
-                <td class="img-png"><img src="assets/image/square.png" alt="View"></td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-div-container">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">S.No.</th>
+                  <th scope="col">Agency Name</th>
+                  <th scope="col">State</th>
+                  <th scope="col">Register Date</th>
+                  <th scope="col">Action</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">View</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of dataInfo | searchString:searchString ; let i = index">
+                  <td>{{ i + 1 }}</td>
+                  <td>{{ item.name }}</td>
+                  <td>{{ item.state }}</td>
+                  <td>{{ item.portalregisterdate | date:'dd/MM/yyyy' }}</td>
+                  <td>
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" [checked]="item.isactive">
+                    </div>
+                  </td>
+                  <td>{{ item.isapprovalpending ? "Approved" : "Pending" }}</td>
+                  <td class="img-png"><img src="assets/image/square.png" alt="View"></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="dropdown-number">
+              <div>
+                <span>Items per page:
+                </span>
+              </div>
+
+              <div>
+                <select id='number' name='number'>
+                  <option value='one'>10</option>
+                  <option value='two'>25</option>
+                  <option value='three'>30</option>
+                </select>
+              </div>
+
+              <div>
+                <span>1 -10 of 10</span>
+              </div>
+
+              <div class="arrow-btn">
+              <img src="assets/image/rt.png" alt="" class="img1">
+                <img src="assets/image/rt.png" alt="" class="img2">
+              </div>
+
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
     <!-- Table Container End -->
 
   </div>
-
-
 </div>

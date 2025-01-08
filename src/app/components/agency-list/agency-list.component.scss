@@ -2,6 +2,7 @@
 .wrapper {
   display: flex;
   height: 600px;
+  overflow: scroll;
 }
 
 nav {
@@ -41,7 +42,7 @@ nav {
   position: absolute;
   background-color: #f6f9fc;
   min-width: 200px;
-margin-top: 18px;
+  margin-top: 18px;
   z-index: 1;
 }
 
@@ -56,6 +57,7 @@ margin-top: 18px;
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 // Nav Sidebar Closed
 
 
@@ -92,52 +94,93 @@ margin-top: 18px;
 
 //  Card wrap table
 
-.card-wrap{
+.card-wrap {
   background-color: #f6f9fc;
-height: 90%;
-border-radius: 7px;
+  height: 90%;
+  border-radius: 7px;
 
 
-.table-nav{
-  display: flex;
-  justify-content: space-between;
-  padding-top: 10px;
-}
+  .table-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
 
-.para{
-  margin-left: 13PX;
+  .para {
+    margin-left: 13PX;
 
 
-  span{
-    font-size: 17px;
-    color: #faa51a;
-    font-weight: 600;
+    span {
+      font-size: 17px;
+      color: #faa51a;
+      font-weight: 600;
+    }
+  }
+
+  .buttons button {
+    background-color: #faa51a;
+    margin-right: 10px;
+    color: white;
   }
 }
 
-.buttons button{
-  background-color: #faa51a;
-  margin-right: 10px;
-}
-
-
-}
-
-
 // Search and Table
 
-.table{
-  margin-top: 12px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.table-div-container {
 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.img-png img{
+.table {
+  margin-top: 12px;
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+table thead tr th {
+  background-color: #e9ecef;
+}
+
+.img-png img {
   height: 2.8vh;
   width: 2vw;
 }
 
+.dropdown-number {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  margin-left: -50px;
+  // margin-top: -8px;
 
 
 
+  span {
+    text-align: center;
+    font-size: 10.8px;
+    font-weight: 500;
+    margin-right: 10px;
+
+  }
+
+  select {
+    height: 5vh;
+    width: 5vw;
+    border-radius: 2PX;
+    margin-right: 10px;
+  }
+
+
+  .arrow-btn img {
+    margin-right: 2px;
+    margin-bottom: 10px;
+    height: 2vh;
+    width: 1vw;
+  }
+  
+  .arrow-btn .img1{
+    transform: rotate(180deg);
+
+  }
+}
 

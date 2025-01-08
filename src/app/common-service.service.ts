@@ -19,7 +19,8 @@ export class CommonServiceService {
       'Authorization': `Bearer ${this.token}`
     });
     return this.http.get('https://dev-ris-backend.epravaha.com/api/Group?GroupType=Agency', {headers});
-    
+    87 
+    0
   }
 }
 
